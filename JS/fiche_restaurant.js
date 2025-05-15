@@ -1,7 +1,4 @@
 // Fiche Restaurant - Simulation des données depuis le fichier JS
-window.onload = function () {
-  alert("JS chargé avec succès !");
-};
 
 document.addEventListener("DOMContentLoaded", function () {
     // Récupérer l'ID du restaurant depuis l'URL
