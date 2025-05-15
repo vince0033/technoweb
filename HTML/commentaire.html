@@ -1,0 +1,44 @@
+
+<!-- Commentaire (commentaire.html) -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajouter un Commentaire - Mon site de restaurants</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <header>
+        <h1>Ajouter un Commentaire</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="admin.html">Espace admin</a></li>
+                <li><a href="filtres.html">Recherche/Filtrage</a></li>
+                <li><a href="login.html">Connexion</a></li>
+                <li><a href="commentaire.html">Ajouter un commentaire</a></li>
+                <li><a href="modification.html">Modifications</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Votre avis compte</h2>
+            <form action="#" method="post">
+                <label for="restaurant">Nom du restaurant</label>
+                <input type="text" id="restaurant" name="restaurant" required>
+                <label for="comment">Votre commentaire</label>
+                <textarea id="comment" name="comment" rows="4" required></textarea>
+                <label for="rating">Votre note (1 à 5)</label>
+                <input type="number" id="rating" name="rating" min="1" max="5" required>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Mon DM Techno Web - Tous droits reservés</p>
+    </footer>
+</body>
+</html>

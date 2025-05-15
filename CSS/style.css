@@ -1,0 +1,335 @@
+/* Style global */
+body {
+  font-family: 'Merriweather', serif;
+  background-color: #f9f3f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  /*max-width: 100vw;*/
+}
+
+/* Header */
+header {
+  background-color: #b87d4b;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  width: 100%;
+  max-width: 2480px;
+  margin: 0 auto;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+header h1 {
+  font-size: 2.8em; /* Augmentation légère de la taille du titre */
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+header p.sous-titre {
+  font-size: 1.3em;
+  margin-top: 5px;
+  color: #f4e4d6;
+}
+
+/* Conteneur de détails du restaurant */
+#restaurant-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 25px 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  margin: 30px auto;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  max-width: 1200px;
+  align-items: center;
+  min-height: 300px; /* Hauteur minimum pour harmoniser avec les autres sections */
+}
+
+/* Bloc pour le texte à gauche */
+.restaurant-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-left: 40px;
+  justify-content: center;
+}
+
+.restaurant-info h2 {
+  color: #b87d4b;
+  font-size: 2.2em;
+  margin: 0;
+  font-weight: 700;
+}
+
+.restaurant-info p {
+  font-size: 1.1em;
+  color: #444;
+  margin: 5px 0;
+}
+
+#restaurant-website a {
+  color: #b87d4b;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+#restaurant-website a:hover {
+  color: #d4a373;
+}
+
+/* Photo du restaurant */
+#restaurant-image {
+  border-radius: 15px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+/* Sections menu et commentaires */
+.section-container {
+  background-color: #ffffff;
+  border-radius: 15px;
+  margin: 30px auto;
+  padding: 3px 25px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  max-width: 1200px;
+  min-height: 300px; /* Hauteur minimum pour aligner avec #restaurant-details */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-container h3 {
+  color: #b87d4b;
+  font-size: 2.2em;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Styles pour le contenu des sections menu et commentaires */
+.section-container ul {
+  font-size: 1.2em;
+  color: #555;
+  line-height: 1.8;
+  padding-left: 0;
+  list-style-type: none;
+  text-align: left;
+}
+
+.section-container ul li::before {
+  content: '•';
+  color: #b87d4b;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* Styles pour les encarts (articles) sur la page d'accueil */
+article {
+  background-color: #ffffff;
+  border-radius: 15px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+  max-width: 900px;
+}
+
+article img.restaurant-photo {
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  transition: box-shadow 0.3s;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+article:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+}
+
+/* Navigation */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a, nav a {
+  color: #f4e4d6;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 20px;
+  background-color: #795548;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover, nav a:hover {
+  background-color: #d4a373;
+  color: #333;
+}
+
+/* Boutons */
+button {
+  background-color: #b87d4b;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+  background-color: #d4a373;
+  color: #333;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+button:active {
+  transform: translateY(2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Pied de page */
+footer {
+  background-color: #b87d4b;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  margin-top: 30px;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.15);
+}
+/* Conteneur pour la section filtre et liste des restaurants */
+.section-container.restaurant-filters {
+  background-color: #ffffff;
+  border-radius: 15px;
+  margin: 30px auto;
+  padding: 30px 25px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  max-width: 890px;
+  min-height: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.section-container.restaurant-filters h3 {
+  color: #b87d4b;
+  font-size: 2.2em;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.section-container.restaurant-filters ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+  font-size: 1.2em;
+}
+
+.section-container.restaurant-filters ul li {
+  margin-bottom: 10px;
+}
+
+.section-container.restaurant-filters ul li a {
+  color: #795548;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.section-container.restaurant-filters ul li a:hover {
+  color: #b87d4b;
+  text-decoration: underline;
+}
+
+/* Styles pour les champs de filtre et les boutons */
+.section-container.restaurant-filters input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+.section-container.restaurant-filters button {
+  background-color: #b87d4b;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+.section-container.restaurant-filters button:hover {
+  background-color: #d4a373;
+  color: #333;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Animation pour le tri des restaurants */
+#listeRestaurants article {
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+/* Animation pour le filtrage des restaurants */
+.fade-out {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s, transform 0.3s;
+}
+/* Mise en surbrillance du texte filtré */
+.highlight {
+  background-color: #ffe9cc;
+  color: #b87d4b;
+  font-weight: 700;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
