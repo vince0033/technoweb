@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
             hours: "Lundi-Samedi: 12h00-14h30, 19h00-22h30",
             rating: 4.5,
             website: "http://www.lebistroquet-paris.fr/",
-            image: "IMG/bistroquet.jpg",
+            image: "../IMG/bistroquet.jpg",
             menu: ["Salade de chèvre chaud", "Entrecôte grillée", "Tarte au citron"],
             comments: ["👍 Super ambiance, service rapide !", "👎 Service un peu lent le soir...", "😍 La cuisine est excellente !"]
         },
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
             hours: "Lundi-Samedi: 12h00-14h30, 19h00-22h30",
             rating: 4.2,
             website: "http://www.chezjeanparis.fr/",
-            image: "IMG/jean.jpg",
+            image: "../IMG/jean.jpg",
             menu: ["Soupe à l'oignon", "Bœuf bourguignon", "Crème brûlée"],
             comments: ["Très bonne cuisine", "Service agréable", "Un peu cher mais ça vaut le coup"]
         },
