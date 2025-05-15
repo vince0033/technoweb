@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
             hours: "Lundi-Samedi: 12h00-14h30, 19h00-22h30",
             rating: 4.2,
             website: "http://www.chezjeanparis.fr/",
-            image: "IMG/jean.png",
+            image: "IMG/jean.jpg",
             menu: ["Soupe à l'oignon", "Bœuf bourguignon", "Crème brûlée"],
             comments: ["Très bonne cuisine", "Service agréable", "Un peu cher mais ça vaut le coup"]
         },
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
             hours: "Lundi-Samedi: 12h00-14h30, 19h00-22h30",
             rating: 4.8,
             website: "http://www.hotel-paris-relais-saint-germain.com/",
-            image: "../IMG/relai.webp",
+            image: "../IMG/relai.jpg",
             menu: ["Salade niçoise", "Entrecôte frites", "Tarte Tatin"],
             comments: ["Service rapide", "Cuisine traditionnelle", "Bon rapport qualité-prix"]
         },
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
             hours: "Lun-Dim 12h00-14h30 / 19h00-23h00",
             rating: 4.4,
             website: "http://www.lebouillon.com",
-            image: "../IMG/bouillon.png",
+            image: "../IMG/bouillon.jpg",
             menu: ["Escargots", "Bœuf bourguignon", "Mousse au chocolat"],
             comments: ["Prix abordables", "Ambiance authentique", "Portions généreuses"]
         },
@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
             hours: "Lun-Sam 7h00-20h00 / Dim 8h00-20h00",
             rating: 3.8,
             website: "http://www.lepainquotidien.com",
-            image: "../IMG/pain.png",
+            image: "../IMG/pain.jpg",
             menu: ["Tartines", "Salades", "Pâtisseries"],
             comments: ["Ambiance cosy", "Bon brunch", "Service un peu lent"]
         },
@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", function () {
             hours: "Lundi-Vendredi: 8h00-22h30",
             rating: 3.9,
             website: "https://www.lacantineparis.com/",
-            image: "../IMG/cantine.webp",
+            image: "../IMG/cantine.jpg",
             menu: ["Plats du jour", "Salades", "Pâtisseries"],
             comments: ["Ambiance décontractée", "Prix raisonnables", "Service rapide"]
         }
